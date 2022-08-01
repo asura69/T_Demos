@@ -1,7 +1,0 @@
-package com.org.demo.HibDemo2;
-
-import java.io.Serializable;
-
-public class AccountEntity implements Serializable {
-
-}

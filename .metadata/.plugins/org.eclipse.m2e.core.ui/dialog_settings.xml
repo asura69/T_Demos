@@ -26,6 +26,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.org.tav.anno"/>
+			<item value="com.org.tav.demo1"/>
 			<item value="com.org.tav.day7"/>
 			<item value="com.org.tav.day8"/>
 		</list>
@@ -33,6 +35,8 @@
 			<item value="com.org"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringAnnotationDemo"/>
+			<item value="SpringDemo1"/>
 			<item value="HibDemoTPC"/>
 			<item value="HibDemoIn"/>
 			<item value="HibDemo3"/>

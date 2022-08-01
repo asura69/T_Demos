@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="hellobean" class="com.org.tav.demo1.HelloWorldService"></bean>
+	<!-- naming bean -->
+	<bean id="win" class="com.org.tav.demo1.Vendor1"></bean>
+	
+	<bean id="door" class="com.org.tav.demo1.Vendor2" autowire="no"></bean><!-- no autowiring mode -->
+	
+	<!-- lazy initialization <bane id =""  class=""  lazy-init="true"> -->
+	<!-- bean id=""  class=""  init-method="" -->
+	
+	<bean id="emp" class="com.demo.bean.Employee">
+	<property name="id" value="101"></property>
+	<property name="name" value="Reethik"></property>
+	<property name="salary" value="50000"></property>
+	
+	</bean>
+	
+	<!-- constructor based dependancy 
+	<bean id="acc" class="com.demo.di_con.Accountant"></bean>
+	<bean id="hr1" class="com.demo.di_con.HumanResourse"></bean>
+	
+	<bean id="manager" class="com.demo.di_con.Manager">
+	<constructor-arg ref ="acc"/>
+	
+     <constructor-arg ref="hr1"/>
+	
+	</bean> -->
+	
+	<bean id="emp1" class="com.demo.di_set.Employee">
+	<property name="emp_id" value="101"></property>
+	<property name="emp_name" value="Dheeraj"></property>
+	<property name="emp_city" value="kakinada"></property>
+	</bean>
+	<!-- Autowire example  -->
+	<bean id="b1" class="com.org.auto.Class_B"></bean>
+	<bean id="b" class="com.org.auto.Class_B"></bean>
+	<bean id="a" class="com.org.auto.Class_A" autowire="byName"></bean>
+	
+	
+	</beans>
